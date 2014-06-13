@@ -1,0 +1,4 @@
+WEBSITE NOTES
+================================================
+* Use "font-variant: small caps" for Title
+
