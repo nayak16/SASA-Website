@@ -1,28 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>My first website</title>
+    <title>Mayur SASA</title>
     <link rel="shortcut icon" href="images/icon.png">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Bootstrap -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom Style Sheet -->
+    <link href="css/animate.css" rel="stylesheet">
     <link href="css/mystyle.css" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  </head>
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
   <body>
+    
+    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px"></span></a>
+    <div id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i><span class="glyphicon glyphicon-arrow-right"></span></a>
+            <li><a href="#top">Home</a>
+            </li>
+            <li><a href="#about">About</a>
+            </li>
+            <li><a href="#events">Events</a>
+            </li>
+            <li><a href="#photos">Photos</a>
+            </li>
+            <li><a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- Header Title -->
     <div id="top" class="background">
         <div class="vert-text">
-            <h1>Mayur SASA</h1>
+            <div id="delayFade" class="animated fadeIn">
+              <h1><strong>Mayur SASA</strong></h1>
+	      <h2>cultural.social.philanthropic</h2>
+            </div>
         </div>
     </div>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
+ 
     <script src="js/bootstrap.js"></script>
+    <!-- Nav-Bar script -->
+    <script>
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+
   </body>
 </html>
 
