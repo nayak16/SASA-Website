@@ -6,26 +6,27 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet">
     <!-- Custom Style Sheet -->
     <link href="css/animate.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/peacock.css" media="screen" type="text/css" />
     <link href="css/mystyle.css" rel="stylesheet">
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-</head>
+  </head>
   <body>
     
     <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px"></span></a>
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i><span class="glyphicon glyphicon-arrow-right"></span></a>
+            <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px"></span></a>
             <li><a href="#top">Home</a>
             </li>
-            <li><a href="#about">About</a>
+            <li><a href="#board">About</a>
             </li>
             <li><a href="#events">Events</a>
             </li>
@@ -36,7 +37,7 @@
         </ul>
     </div>
     <!-- Header Title -->
-    <div id="top" class="background">
+    <div id="top" class="animated header background">
         <div class="vert-text">
             <div id="delayFade" class="animated fadeIn">
               <h1><strong>Mayur SASA</strong></h1>
@@ -44,6 +45,36 @@
             </div>
         </div>
     </div>
+
+
+
+   <!--
+   <div id= "board" class="board">
+     <h1>MEET THE BOARD </h1>  
+     <div class="bodyIn board-item">
+        <div id="banner">
+         <div id="peacock">
+          <div id="feathers">
+            <div id="f4" class="feather left"></div>
+            <div id="f3" class="feather left"></div>
+            <div id="f2" class="feather left"></div>
+            <div id="f1" class="feather left"></div>
+            <div id="f6" class="feather right"></div>
+            <div id="f7" class="feather right"></div>
+            <div id="f8" class="feather right"></div>
+            <div id="f9" class="feather right"></div>
+            <div id="f5" class="feather center"></div>
+          </div>
+          <div id="peacockBody"></div>
+        </div>
+       </div>
+     </div>
+   </div>
+   -->
+    <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js'></script>
+
+    <script src="js/peacock.js"></script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -63,6 +94,24 @@
         $("#sidebar-wrapper").toggleClass("active");
     });
     </script>
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
 
   </body>
 </html>

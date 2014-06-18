@@ -1,0 +1,61 @@
+.bodyin {
+	background-color:#000000;
+	margin:15px;
+	color:#CCCCCC;
+	font-family:Arial, Helvetica, sans-serif;
+  background: #fff65e; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #fff65e 0%, #febf04 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#fff65e), color-stop(100%,#febf04)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #fff65e 0%,#febf04 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #fff65e 0%,#febf04 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #fff65e 0%,#febf04 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #fff65e 0%,#febf04 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff65e', endColorstr='#febf04',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+#banner {
+	width:600px;
+	height:400px;
+	margin:50px auto;
+	position:relative;
+  visibility:hidden;
+	
+}
+#peacock {
+	cursor: pointer;
+	left: 10px;
+        top: 40px;
+        margin-bottom: 100px;
+	position: relative;
+}
+#peacockBody {
+	position:absolute;
+	width:122px;
+	height:258px;
+	left:214px;
+	top:108px;
+	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/body.png);
+	background-repeat: no-repeat;
+}
+#feathers {
+	height:288px;
+	width: 576px;
+	position:absolute;
+   -webkit-backface-visibility: hidden;
+}
+
+.feather {
+        position:absolute;
+        width:94px;
+        height:288px;
+        left:240px;
+        top:20px;
+        background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/feather.png);
+}
+#f1:hover,
+#f2:hover {
+
+
+}
+
