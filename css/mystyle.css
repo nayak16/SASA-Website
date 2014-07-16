@@ -2,6 +2,10 @@ html,
 body {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  background-size: contain;
 }
 
 /* Title */
@@ -10,7 +14,7 @@ body {
   top: 300px;
   left: 200px;
 }
-.vert-text h1 {
+#top .vert-text h1 {
   padding: 0;
   margin: 0;
   font-size: 1000%;
@@ -18,7 +22,7 @@ body {
   color: white;
   font-family: 'Amatic SC', cursive;
 }
-.vert-text h2{
+#top .vert-text h2{
   font-size: 300%;
   font-weight: 300;
   color: white;
@@ -50,12 +54,11 @@ body {
   height: 100%;
   filter: alpha(opacity:40);
   background: url(../images/cloud1.jpg) no-repeat center center fixed;
-  border: 2px solid black;
   -webkit-background-size: 100px 0px;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: 0px -150px
+  background-position: 0px -155px;
 }
 /* Nav-Bar Button */
 .btn-lg,
@@ -94,6 +97,11 @@ body {
   border-color: #adadad;
 }
 
+.inside-btn{
+    position: relative;
+    right: 5%;
+}
+
 /* Nav-Bar */
 #sidebar-wrapper {
   margin-right: -250px;
@@ -114,7 +122,7 @@ body {
 .sidebar-nav {
   position: absolute;
   top: 0;
-  width: 250px;
+  width: 230px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -162,14 +170,14 @@ body {
 
 #menu-toggle {
   top: 0;
-  right: 0;
+  right: 14px;
   position: fixed;
   z-index: 1;
 }
 
 #sidebar-wrapper.active {
   right: 250px;
-  width: 250px;
+  width: 230px;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -ms-transition: all 0.4s ease 0s;
@@ -181,6 +189,33 @@ body {
   margin: 5px 5px 0 0;
 }
 
+/* intro */
+.intro .vert-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.intro .vert-text h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+}
+
+
+.callout {
+  color: #ffffff;
+  display: table;
+  height: 300px;
+  width: 100%;
+  background: url(../images/blurry.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 /* Board */
 
 .board {
@@ -188,12 +223,20 @@ body {
 }
 
 .board-item {
-  margin-bottom: 25px;
+  margin-bottom: 0px;
+}
+.board-background {
+  width: 100%;
+  height: 100%;
+  filter: alpha(opacity:40);
+  background: url(../images/sunrise.jpg) no-repeat center center fixed;
+  -webkit-background-size: 100px 0px;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: 0px 0px;
 }
 
-.img-board {
-  margin: 0 auto;
-}
 .board h1 {
   top: -30px;
   font-size: 500%;
@@ -204,5 +247,103 @@ body {
 
 }
 
+/* Board Members */
+.board_members {
+    position: relative;
+    bottom: 680px;
+    text-align: center;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; 
+}
 
+.board_members #p1 {
+  position: relative;
+  top: 430px;
+  left: 100px;
+  opacity:0;
+}
+.board_members #p2 {
+  position: relative;
+  top: 130px;
+  left: 160px;
+  opacity:0;
+}
+.board_members #p3 {
+  position: relative;
+  bottom: 190px;
+  left: 270px;
+  opacity:0;
+}
+.board_members #p4 {
+  position: relative;
+  bottom: 500px;
+  left: 440px;
+  opacity:0;
+}
+.board_members #p5 {
+  position: relative;
+  bottom: 730px;
+  left: 615px;
+  opacity:0;
+}
+.board_members #p6 {
+  position: relative;
+  bottom: 900px;
+  left: 800px;
+  opacity:0;
+}
+.board_members #p7 {
+  position: relative;
+  bottom: 990px;
+  left: 970px;
+  opacity:0;
+}
+.board_members #p8 {
+  position: relative;
+  bottom: 1068px;
+  left: 1080px;
+  opacity:0;
+}
+.board_members #p9 {
+  position: relative;
+  bottom: 1170px;
+  left: 1150px;
+  opacity:0;
+}
 
+#board .board_members h3 {
+  position: absolute;
+  left: 40px;
+  top:  190px;  
+  color: white;
+}
+
+#board .board_members p {
+    position: absolute;
+    font-size: 130%;
+    top: 240px;
+    left: 60px;
+    color: white;
+    
+}
+.img-circle {
+    border-radius: 50%;
+   
+}
+
+/* About section */
+#about .page-header{
+  padding: 15px;
+  margin: 0;
+  font-size: 3.5em;
+  f
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.tab-pane {
+  margin-top: 1%;
+}

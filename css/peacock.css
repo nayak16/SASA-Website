@@ -16,18 +16,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff65e', end
 
 #banner {
 	width:600px;
-	height:400px;
+	height:300px;
 	margin:50px auto;
 	position:relative;
-  visibility:hidden;
+    visibility:hidden;
+    z-index: 10;
 	
 }
 #peacock {
 	cursor: pointer;
 	left: 10px;
-        top: 40px;
-        margin-bottom: 100px;
+    margin-bottom: 250px;
 	position: relative;
+    z-index: 100;
 }
 #peacockBody {
 	position:absolute;
@@ -39,7 +40,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff65e', end
 	background-repeat: no-repeat;
 }
 #feathers {
-	height:288px;
+	height:350px;
 	width: 576px;
 	position:absolute;
    -webkit-backface-visibility: hidden;
@@ -53,6 +54,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff65e', end
         top:20px;
         background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/feather.png);
 }
+
+
 #f1:hover,
 #f2:hover {
 
