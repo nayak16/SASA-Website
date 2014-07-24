@@ -219,7 +219,7 @@ body {
 /* Board */
 
 .board {
-  padding: 50px 0;
+  padding: 10px 0;
 }
 
 .board-item {
@@ -238,7 +238,7 @@ body {
 }
 
 .board h1 {
-  top: -30px;
+  top: 0px;
   font-size: 500%;
   text-align: center;
   position: relative;
@@ -347,3 +347,101 @@ body {
 .tab-pane {
   margin-top: 1%;
 }
+
+/* Half Page Height Carousel Customization */
+.carousel {
+  height: 70%;
+}
+
+.item,
+.active,
+.carousel-inner {
+  height: 100%;
+}
+
+.fill {
+  width: 100%;
+  height: 85%;
+  background-position: center;
+  background-size: cover;
+  background-position: 0px 55%;
+}
+.carousel-indicators {
+  position: absolute;
+  bottom: 94%;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: -6%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
+}
+#cap1 h1{
+    color: purple;
+}
+#cap1 p{
+    color: black;
+    font-size: 130%;
+}
+.about-section{
+    margin-bottom: 2.2%
+}
+.about-section p{
+    font-size: 110%;
+}
+/* Social Icons Styles */
+.list-social-icons {
+  margin-bottom: 45px;
+}
+
+.tooltip-social a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.facebook-link a:hover {
+  color: #3b5998;
+}
+
+.linkedin-link a:hover {
+  color: #007fb1;
+}
+
+.twitter-link a:hover {
+  color: #39a9e0;
+}
+
+.google-plus-link a:hover {
+  color: #d14836;
+}
+
+/* Footer */
+footer {
+    padding: 100px 0;
+}
+

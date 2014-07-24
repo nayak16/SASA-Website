@@ -34,7 +34,10 @@ tl.tweenTo(tl.duration(), {ease:Bounce.easeOut})
 
 //Fade in board members 
 
-/
+$('document').ready(function(){		
+    tl.tweenTo(0).timeScale(3);
+    isOpen= true;
+});
 $('#f1').mouseover(function(){
     //show the box
     $('#p1').animate({opacity:1},300);
