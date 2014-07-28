@@ -32,6 +32,8 @@
 	#calendar {
 		width: 900px;
 		margin: 40px auto;
+		position: relative;
+        left: 5%;
 	}
 
     </style>
@@ -207,56 +209,83 @@
     </div>
   </div>
   
-  <!-- Events -->
-
-  <div id='calendar'></div>
-
-  <!-- Fun Fact -->
+    <!-- Fun Fact -->
   <div class="intro">
      <div class="callout">
-         <div class="vert-text">
+        <div class="vert-text">
            <h1>Always stay informed about our events!</h1>
 	    <a href="#" class="btn btn-lg btn-danger btn-mail" data-toggle="modal" data-target="#EmailModal"><span class="glyphicon glyphicon-envelope"></span> Join Our Mailing List</a>
 		<!-- Modal -->
-		<div class="modal fade" id="EmailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  		    <div class="modal-dialog">
-    			<div class="modal-content">
-      			    <div class="modal-header">
-        			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        			<h4 class="modal-title" id="myModalLabel">Join Our Mailing List</h4>
-     			    </div>
-     			    <div class="modal-body">
-			    	<iframe src="https://docs.google.com/forms/d/1VmV1rlH6HtdgT8je-Am3ITModSqcR2slXYEPLmgth3g/viewform?embedded=true" width="570" height="420" frameborder="0" marginheight="0" marginwidth="0">
-				    Loading...
-				</iframe>
-			    </div>
-     			    <div class="modal-footer">
-       				 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-     			    </div>
-    		        </div>
-                    </div>
-                 </div>
-         </div>
+		  <div class="modal fade" id="EmailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  		      <div class="modal-dialog">
+    		  	  <div class="modal-content">
+      			      <div class="modal-header">
+        			    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        			    <h4 class="modal-title" id="myModalLabel">Join Our Mailing List</h4>
+     			      </div>
+     			      <div class="modal-body">
+			    	    <iframe src="https://docs.google.com/forms/d/1VmV1rlH6HtdgT8je-Am3ITModSqcR2slXYEPLmgth3g/viewform?embedded=true" width="570" height="420" frameborder="0" marginheight="0" marginwidth="0">
+				           Loading...
+				        </iframe>
+			          </div>
+     			      <div class="modal-footer">
+       				     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+     			      </div>
+    		       </div>
+              </div>
+          </div>
+        </div>
      </div>
   </div>
 
 
+    <!-- Events -->
+    <div id="Events">
+       <h1 class="text-center">Events</h1>
+       <div id='calendar'></div>
 
+       <!-- Upcoming Events Panel -->
+       <div class="col-lg-3 upcoming-panel">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <i class="fa fa-bell fa-fw"></i> 
+                            Upcoming Events
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+       </div>
+    </div>
 
+    <div class="modal fade" id="EventsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  		 <div class="modal-dialog">
+    		  <div class="modal-content">
+      			    <div class="modal-header">
+        			  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        	          <h4 class="modal-title" id="myModalLabel">Join Our Mailing List</h4>
+     			    </div>
+     	            <div class="modal-body">
+			    	    
+		            </div>
+     	    	    <div class="modal-footer">
+       				   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+     			    </div>
+    		  </div>
+         </div>
+     </div>
 
-
-
-
-
-   <!-- Footer -->
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
 		<!-- Button trigger modal -->
-	        <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
- 		 Contact Us
-		</button>
+	        <button class="btn btn-primary btn-lg btn-contact" data-toggle="modal" data-target="#myModal">
+ 		       Contact Us
+		    </button>
 
 		<!-- Modal -->
 		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -307,7 +336,7 @@
 
     <script type="text/javascript" src="js/moment.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/fullcalendar.min.js"></script>
+    <script type="text/javascript" src="js/fullcalendar.js"></script>
     <script type="text/javascript" src="js/gcal.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js'></script>
     <script src="js/bootstrap.js"></script>
@@ -332,7 +361,12 @@
 			
 			eventClick: function(event) {
 				// opens events in a popup window
-				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				//$('#EventsModal').modal('toggle')
+				//window.open(event.url, 'gcalevent', 'width=700,height=600');
+				var url = event.url	
+                $(".modal-body").html('<iframe width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true" src="'+url+'"></iframe>');
+                $('#EventsModal').modal()
+
 				return false;
 			},
 			
