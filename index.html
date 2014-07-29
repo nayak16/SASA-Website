@@ -45,15 +45,15 @@
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="inside-btn btn btn-default btn-lg pull-right toggle"><i></i><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px"></span></a>
-            <li><a onclick="$('#top').animatescroll();">Home</a>
+            <li><a href='#top' onclick="#top">Home</a>
             </li>
-            <li><a onclick="$('.about').animatescroll();">About</a>
+            <li><a href="#myCarousel">About</a>
             </li>
-            <li><a onclick="$('#top').animatescroll();">Events</a>
+            <li><a href="#events">Events</a>
             </li>
-            <li><a onclick="$('#board').animatescroll();">Board</a>
+            <li><a href='#board'>Board</a>
             </li>
-            <li><a onclick="$('#top').animatescroll();">Contact</a>
+            <li><a href="#contact">Contact</a>
             </li>
         </ul>
     </div>
@@ -82,7 +82,7 @@
                 <div class="fill" style="background-image:url('images/bib.jpg');"></div>
                 <div id="cap1"class="carousel-caption">
                     <h1>Bhangra In the Burgh</h1>
-		    <p>The largest student run event in Pittsburgh. <a href="http://www.bhangraintheburgh.org" target="_blank">Click</a> to learn more.
+         		    <p>The largest student run event in Pittsburgh. <a href="http://www.bhangraintheburgh.org" target="_blank">Click</a> to learn more.</p>
                 </div>
             </div>
             <div class="item">
@@ -106,7 +106,7 @@
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
             <span class="icon-next"></span>
         </a>
-    </div>
+   </div>
 
     <div class="about-section">
 
@@ -240,7 +240,7 @@
 
 
     <!-- Events -->
-    <div id="Events">
+    <section id="events">
        <h1 class="text-center">Events</h1>
        <div id='calendar'></div>
 
@@ -258,27 +258,11 @@
                         <!-- /.panel-body -->
                     </div>
        </div>
-    </div>
-
-    <div class="modal fade" id="EventsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  		 <div class="modal-dialog">
-    		  <div class="modal-content">
-      			    <div class="modal-header">
-        			  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        	          <h4 class="modal-title" id="myModalLabel">Join Our Mailing List</h4>
-     			    </div>
-     	            <div class="modal-body">
-			    	    
-		            </div>
-     	    	    <div class="modal-footer">
-       				   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-     			    </div>
-    		  </div>
-         </div>
-     </div>
-
+    
+    </section>
+    
     <!-- Footer -->
-    <footer>
+    <footer id ="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
@@ -341,7 +325,6 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js'></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/peacock.js"></script>
-    <script src="js/animatescroll.js"></script>
     <script src="js/app.js"></script>
 
     <script>
@@ -402,6 +385,23 @@
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+    <script>
+	$(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
     });
     </script>
 
