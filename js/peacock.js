@@ -27,6 +27,13 @@ $('#peacockBody').click(function(){
   isOpen = !isOpen;
 })
 
+if(isOpen){
+    $('#peacockBody').popover('destroy')
+}
+else{
+    $('#peacockBody').popover()
+}
+console.log(isOpen);
 //party started
 TweenLite.from(banner, 0.2, {autoAlpha:0})
 TweenLite.from(banner, 1, {scale:0, ease:Back.easeOut});

@@ -30,7 +30,7 @@ body {
   padding: 0;
   margin: 0;
   position: relative;
-  right: 0px;
+  right: 22px;
   top: -19px;
  }
 /* Title text delay */
@@ -58,7 +58,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: 0px -155px;
+  background-position: 0px -185px;
 }
 /* Nav-Bar Button */
 .btn-lg,
@@ -190,26 +190,25 @@ body {
 }
 
 /* intro */
-.intro .vert-text {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
+
+.callout .text-center{
+   display: table-cell; 
+   vertical-align: middle;
+   text-align: center;
+   
 }
 
-.intro .vert-text h1 {
-  padding: 0;
-  margin: 0;
-  font-size: 4.5em;
-  font-weight: 700;
+.callout .text-center h1{
+    color: white;
+    font-size: 300%;
 }
-
 
 .callout {
   color: #ffffff;
   display: table;
-  height: 300px;
+  height: 350px;
   width: 100%;
-  background: url(../images/blurry.jpg) no-repeat center center fixed; 
+  background: url(../images/hamer.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -229,12 +228,12 @@ body {
   width: 100%;
   height: 100%;
   filter: alpha(opacity:40);
-  background: url(../images/sunrise.jpg) no-repeat center center fixed;
+  background: url(../images/Taj_Mahal.jpg) no-repeat center center fixed;
   -webkit-background-size: 100px 0px;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-position: 0px 0px;
+  background-position: -10px 0px;
 }
 
 .board h1 {
@@ -244,6 +243,8 @@ body {
   position: relative;
   padding: 0px;
   margin-bottom: 0px;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
 
 }
 
@@ -401,12 +402,36 @@ body {
     text-align: center;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.6);
 }
+
+/* Carousel Captions */
+.carousel-inner p{
+  font-size: 130%;
+  bottom: 5px;
+  position: relative;
+}
+
 #cap1 h1{
     color: purple;
 }
 #cap1 p{
     color: black;
-    font-size: 130%;
+}
+#cap2 h1{
+    color: black;
+
+}
+#cap2 p{
+    color: black;
+
+}
+
+#cap3 h1{
+    color: black;
+
+}
+#cap3 p{
+    color: black;
+
 }
 .about-section{
     margin-bottom: 2.2%
@@ -449,7 +474,9 @@ body {
     font-size: 130%;
     text-align: center;
 }
-
+.hero-spacer {
+    margin-top: 50px;
+}
 /* Footer */
 footer {
     padding: 100px 0;

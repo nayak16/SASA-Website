@@ -19,6 +19,7 @@
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <style>
 
@@ -45,15 +46,20 @@
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="inside-btn btn btn-default btn-lg pull-right toggle"><i></i><span class="glyphicon glyphicon-arrow-right" style="font-size: 30px"></span></a>
-            <li><a href='#top' onclick="#top">Home</a>
+            <li>
+            	<a href='#top'>Home</a>
             </li>
-            <li><a href="#myCarousel">About</a>
+            <li>
+            	<a href="#about">About</a>
             </li>
-            <li><a href="#events">Events</a>
+            <li>
+            	<a href='#board'>Board</a>
             </li>
-            <li><a href='#board'>Board</a>
+            <li>
+            	<a href="#events">Events</a>
             </li>
-            <li><a href="#contact">Contact</a>
+            <li>
+            	<a href="#contact">Contact</a>
             </li>
         </ul>
     </div>
@@ -62,15 +68,15 @@
         <div class="vert-text">
             <div id="delayFade" class="animated fadeIn">
               <h1><strong>Mayur SASA</strong></h1>
-	      <h2>cultural.social.philanthropic</h2>
+	      <h2>cultural &middot social &middot philanthropic</h2>
             </div>
         </div>
     </div>
 
-
-  <div id="myCarousel" class="carousel slide about">
+   
+  <div id="myCarousel" class="carousel slide">
         <!-- Indicators -->
-        <ol class="carousel-indicators">
+        <ol id="about" class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
@@ -79,7 +85,14 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
-                <div class="fill" style="background-image:url('images/bib.jpg');"></div>
+           		<div class="fill" style="background-image:url('images/mayurshow.jpg');"></div>
+                <div id="cap3" class="carousel-caption">
+                    <h1>Mayur Show 2014</h1>
+                    <p>A showcase of talents across campus filled with laughs and excitement</p>
+                </div>
+            </div>
+            <div class="item">
+            	<div class="fill" style="background-image:url('images/bib.jpg');"></div>
                 <div id="cap1"class="carousel-caption">
                     <h1>Bhangra In the Burgh</h1>
          		    <p>The largest student run event in Pittsburgh. <a href="http://www.bhangraintheburgh.org" target="_blank">Click</a> to learn more.</p>
@@ -88,13 +101,8 @@
             <div class="item">
                 <div class="fill" style="background-image:url('images/booth.jpg');"></div>
                 <div id="cap2"class="carousel-caption">
-                    <h1>Booth</h1>
-                </div>
-            </div>
-            <div class="item">
-                <div class="fill" style="background-image:url('http://placehold.it/1900x1080&text=Slide Three');"></div>
-                <div id="cap3" class="carousel-caption">
-                    <h1>Additional Layout Options at</h1>
+                    <h1><a href="https://www.facebook.com/media/set/?set=a.603553493098985.1073741835.444633935657609&type=3" target="_blank" color='#1975FF'>Avatar</a> Booth 2014</h1>
+                    <p>Blitz Booth: 2nd Place 2014 &middot 1st Place 2013 &middot 2nd Place 2012 &middot We're kinda good</p>
                 </div>
             </div>
         </div>
@@ -153,10 +161,13 @@
             <div id="f9" class="feather right"></div>
             <div id="f5" class="feather center"></div>
           </div>
-          <div id="peacockBody"></div>
+          <div id="peacockBody" data-trigger="hover" data-placement='top' title="Mayur" data-content="Click me and checkout my feathers!!"></div>
+         
+       
         </div>
        </div>
      </div>
+
      
     <div class="board_members">
       <div id="p1">
@@ -210,11 +221,12 @@
   </div>
   
     <!-- Fun Fact -->
-  <div class="intro">
+  <div id="callout">
      <div class="callout">
-        <div class="vert-text">
-           <h1>Always stay informed about our events!</h1>
-	    <a href="#" class="btn btn-lg btn-danger btn-mail" data-toggle="modal" data-target="#EmailModal"><span class="glyphicon glyphicon-envelope"></span> Join Our Mailing List</a>
+        <div class="text-center">
+           <h1><strong>Always stay informed about our events!<strong></h1>
+	       <a href="#" class="btn btn-lg btn-primary btn-mail" data-toggle="modal" data-target="#EmailModal"><span class="glyphicon glyphicon-envelope"></span> Join Our Mailing List</a>
+	    </div>
 		<!-- Modal -->
 		  <div class="modal fade" id="EmailModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   		      <div class="modal-dialog">
@@ -234,13 +246,12 @@
     		       </div>
               </div>
           </div>
-        </div>
      </div>
   </div>
 
 
     <!-- Events -->
-    <section id="events">
+    <section id="events" class="events-background">
        <h1 class="text-center">Events</h1>
        <div id='calendar'></div>
 
@@ -253,7 +264,15 @@
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            
+                        	<div class="thumbnail">
+                   		   		<img src="http://www.cs.cmu.edu/~raju/Photos/AID-CMU-Fence/slides/Fence-Panorama.jpg" alt="">
+                    			<div class="caption">
+                        			<h3 class="text-center">SASA BBQ</h3>
+                        			<p>What:  Come to The Fence for some free food and meet all the south asian clubs on campus!</p>
+                        			<p>When:  1pm-4pm, Sunday, August 25th</p>
+                        			<p>Where: The Fence </p>
+                    			</div>
+                			</div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -324,9 +343,12 @@
     <script type="text/javascript" src="js/gcal.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js'></script>
     <script src="js/bootstrap.js"></script>
+    <script>
+			
+    </script>
     <script src="js/peacock.js"></script>
     <script src="js/app.js"></script>
-
+ 	
     <script>
 
 	$(document).ready(function() {
@@ -345,10 +367,10 @@
 			eventClick: function(event) {
 				// opens events in a popup window
 				//$('#EventsModal').modal('toggle')
-				//window.open(event.url, 'gcalevent', 'width=700,height=600');
-				var url = event.url	
-                $(".modal-body").html('<iframe width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true" src="'+url+'"></iframe>');
-                $('#EventsModal').modal()
+				window.open(event.url, 'gcalevent', 'width=700,height=600');
+				//var url = event.url	
+                //$(".modal-body").html('<iframe width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true" src="'+url+'"></iframe>');
+                //$('#EventsModal').modal()
 
 				return false;
 			},
@@ -388,21 +410,29 @@
     });
     </script>
     <script>
+    /*
+    var lastTarget;
 	$(function() {
         $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
                 var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
+
+                if(target != lastTarget) {
+
+               		target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                	if (target.length) {
+                    	$('html,body').animate({
+                        	scrollTop: target.offset().top
+                    	}, 1000);
+                    	return false;
+                	}
+            	}
+            	lastTarget = target;
+
         });
-    });
+    }); 
+    */
     </script>
 
   </body>

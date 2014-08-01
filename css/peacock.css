@@ -36,7 +36,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff65e', end
 	height:258px;
 	left:214px;
 	top:108px;
-	background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/body.png);
+	background-image: url(../images/peacockBody.png);
 	background-repeat: no-repeat;
 }
 #feathers {
