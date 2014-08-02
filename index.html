@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Style Sheet -->
     
 
@@ -20,6 +20,8 @@
     <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Enriqueta' rel='stylesheet' type='text/css'>
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <style>
 
@@ -172,7 +174,7 @@
     <div class="board_members">
       <div id="p1">
         <img class="img-circle img-responsive" src="images/tissue.jpg">
-        <h3>Aatish Nayak</h3>
+        <h3 class="text-center">Aatish Nayak</h3>
         <p>Webmaster</p>
       </div>
       <div id="p2">
@@ -212,7 +214,7 @@
       </div>
       <div id="p9">
         <img class="img-circle img-responsive" src="images/nandini.jpg">
-        <h3><center>Nandini Ramakrishnan</center></h3>
+        <h3 class="text-center">Nandini Ramakrishnan</h3>
         <p>Secretary</p>
       </div>
 
@@ -251,7 +253,7 @@
 
 
     <!-- Events -->
-    <section id="events" class="events-background">
+    <div id="events" class="events-background">
        <h1 class="text-center">Events</h1>
        <div id='calendar'></div>
 
@@ -278,68 +280,62 @@
                     </div>
        </div>
     
-    </section>
-    
+    </div>
     <!-- Footer -->
-    <footer id ="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-		<!-- Button trigger modal -->
+    <div id ="contact" class="text-center footer-background">
+         <div class="content text-center">
 	        <button class="btn btn-primary btn-lg btn-contact" data-toggle="modal" data-target="#myModal">
  		       Contact Us
 		    </button>
 
-		<!-- Modal -->
-		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  		    <div class="modal-dialog">
-    			<div class="modal-content">
-      			    <div class="modal-header">
-        			<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        			<h4 class="modal-title" id="myModalLabel">Contact Us</h4>
-     			    </div>
-     			    <div class="modal-body">
+			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  		    	<div class="modal-dialog">
+    				<div class="modal-content">
+      			    	<div class="modal-header">
+        						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        						<h4 class="modal-title" id="myModalLabel">Contact Us</h4>
+     				    </div>
+     				    <div class="modal-body">	
 
-			         <iframe src="https://docs.google.com/forms/d/1Y9JE9MD6gq5HiuZPSBCpUrMEmxMYQhw69tnAHsO_oCc/viewform?embedded=true" width="570" height="520" frameborder="0" marginheight="0" marginwidth="0">
-				    Loading...
-				 </iframe>
-			    </div>
-     			    <div class="modal-footer">
-       				 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-     			    </div>
-    		        </div>
-                    </div>
-                 </div> <!--./Modal -->
+				        	<iframe src="https://docs.google.com/forms/d/1Y9JE9MD6gq5HiuZPSBCpUrMEmxMYQhw69tnAHsO_oCc/viewform?embedded=true" width="570" height="520" frameborder="0" marginheight="0" marginwidth="0">
+					    		Loading...
+					    	</iframe>
+			 	       </div>
+     				    <div class="modal-footer">
+       					 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+     				    </div>
+    			    </div>
+             	</div>
+        	</div> 
 
 			<br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="https://www.facebook.com/cmumayursasa" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="http://instagram.com/mayursasa" target="_blank"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-		    <ul class = list-unstyled>
-		    <a href="https://twitter.com/nayakkayak" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @nayakkayak</a>
-		    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-		    </ul>
-                    <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fcmumayursasa&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
-		    <hr class="small">
-                    <p class="text-muted">&copy; Webmaster: Aatish Nayak &middot; Design By: Sruthi Ramesh &middot; 2014</p>
-                </div>
-            </div>
+    	    <ul class="list-inline">
+       	 		<li>
+            		<a href="https://www.facebook.com/cmumayursasa" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+            	</li>
+            	<li>
+                	<a href="" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+            	</li>
+            	<li>
+                	<a href="http://instagram.com/mayursasa" target="_blank"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
+            	</li>
+        	</ul>
+			<ul class = "list-unstyled">
+		    <!-- <a href="https://twitter.com/nayakkayak" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @nayakkayak</a>
+		    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> -->
+			</ul>
+        	<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fcmumayursasa&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
+		 	<hr class="small">
+        	<p color="black">&copy; Webmaster: Aatish Nayak &middot; Design By: Sruthi Ramesh &middot; 2014</p>
         </div>
+            
 
-    </footer>
+    </div>
 
 
     <script type="text/javascript" src="js/moment.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/fullcalendar.js"></script>
+    <script type="text/javascript" src="js/fullcalendar.min.js"></script>
     <script type="text/javascript" src="js/gcal.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js'></script>
     <script src="js/bootstrap.js"></script>
@@ -368,9 +364,7 @@
 				// opens events in a popup window
 				//$('#EventsModal').modal('toggle')
 				window.open(event.url, 'gcalevent', 'width=700,height=600');
-				//var url = event.url	
-                //$(".modal-body").html('<iframe width="100%" height="100%" frameborder="0" scrolling="no" allowtransparency="true" src="'+url+'"></iframe>');
-                //$('#EventsModal').modal()
+				
 
 				return false;
 			},

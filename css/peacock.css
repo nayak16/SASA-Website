@@ -25,18 +25,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff65e', end
 }
 #peacock {
 	cursor: pointer;
-	left: 10px;
+	left: 4%;
+    bottom: -10%;
     margin-bottom: 250px;
 	position: relative;
     z-index: 100;
 }
 #peacockBody {
 	position:absolute;
-	width:122px;
+	width:255px;
 	height:258px;
-	left:214px;
+	left:150px;
 	top:108px;
-	background-image: url(../images/peacockBody.png);
+	background-image: url(../images/peacockbodyfull.png);
 	background-repeat: no-repeat;
 }
 #feathers {
@@ -48,11 +49,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff65e', end
 
 .feather {
         position:absolute;
-        width:94px;
+        width:110px;
         height:288px;
         left:240px;
         top:20px;
         background-image: url(../images/peacockfeather.png);
+}
+.feather:hover{
+      background-image: url(../images/peacockfeathersel.png);
 }
 
 
