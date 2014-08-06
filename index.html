@@ -3,6 +3,9 @@
   <head>
     <title>Mayur SASA</title>
     <link rel="shortcut icon" href="images/icon.jpg">
+    <link rel="image_src" href="images/thumbnail.jpg">
+    <link rel="image_src" href="images/cloud.jpg">
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,15 +19,9 @@
     <link href="css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="css/peacock.css" media="screen" type="text/css" >
     <link href="css/mystyle.css" rel="stylesheet">
-    <!-- Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Enriqueta' rel='stylesheet' type='text/css'>
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <style>
+     <style>
 
+	
 	#loading {
 		display: none;
 		position: absolute;
@@ -33,13 +30,21 @@
 	}
 
 	#calendar {
-		width: 900px;
-		margin: 40px auto;
+		width: 57%;
+		margin: 3% auto;
 		position: relative;
         left: 5%;
 	}
 
     </style>
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Enriqueta' rel='stylesheet' type='text/css'>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+   
 
   </head>
   <body>
@@ -76,7 +81,7 @@
     </div>
 
    
-  <div id="myCarousel" class="carousel slide">
+  <div id="myCarousel" data-interval="10" class="carousel slide">
         <!-- Indicators -->
         <ol id="about" class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -89,7 +94,7 @@
             <div class="item active">
            		<div class="fill" style="background-image:url('images/mayurshow.jpg');"></div>
                 <div id="cap3" class="carousel-caption">
-                    <h1>Mayur Show 2014</h1>
+                    <h1><a href="https://www.youtube.com/watch?v=SMDx_RoCdoM&feature=youtu.be&t=1s" target="_blank">Mayur Show 2014</a></h1>
                     <p>A showcase of talents across campus filled with laughs and excitement</p>
                 </div>
             </div>
@@ -111,10 +116,10 @@
 
         <!-- Controls -->
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="icon-prev"></span>
+            <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
         <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="icon-next"></span>
+            <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
    </div>
 
@@ -255,10 +260,10 @@
     <!-- Events -->
     <div id="events" class="events-background">
        <h1 class="text-center">Events</h1>
-       <div id='calendar'></div>
-
        <!-- Upcoming Events Panel -->
-       <div class="col-lg-3 upcoming-panel">
+       <div class="container-fluid">
+       <div class="row">
+       <div class="col-lg-4 col-md-3 col-sm-3 col-xs-3 upcoming-panel">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <i class="fa fa-bell fa-fw"></i> 
@@ -278,8 +283,12 @@
                         </div>
                         <!-- /.panel-body -->
                     </div>
+
        </div>
-    
+              <div class="col-lg-8" id='calendar'></div>
+
+      </div> 
+      </div>
     </div>
     <!-- Footer -->
     <div id ="contact" class="text-center footer-background">

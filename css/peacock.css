@@ -11,7 +11,6 @@ background: -o-radial-gradient(center, ellipse cover,  #fff65e 0%,#febf04 100%);
 background: -ms-radial-gradient(center, ellipse cover,  #fff65e 0%,#febf04 100%); /* IE10+ */
 background: radial-gradient(ellipse at center,  #fff65e 0%,#febf04 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff65e', endColorstr='#febf04',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
 }
 
 #banner {
@@ -27,16 +26,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff65e', end
 	cursor: pointer;
 	left: 4%;
     bottom: -10%;
-    margin-bottom: 250px;
+    margin-bottom: 33vh;
 	position: relative;
     z-index: 100;
 }
 #peacockBody {
 	position:absolute;
-	width:255px;
-	height:258px;
-	left:150px;
-	top:108px;
+	width:16vw;
+	height:32vh;
+	left:27%;
+	top: 15vh;
 	background-image: url(../images/peacockbodyfull.png);
 	background-repeat: no-repeat;
 }
