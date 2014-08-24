@@ -14,8 +14,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff65e', end
 }
 
 #banner {
-	width:600px;
-	height:300px;
+	width:40%;
+	height:35vh;
 	margin:50px auto;
 	position:relative;
     visibility:hidden;
@@ -24,7 +24,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff65e', end
 }
 #peacock {
 	cursor: pointer;
-	left: 4%;
+	left: 1vw;
     bottom: -10%;
     margin-bottom: 33vh;
 	position: relative;
@@ -32,7 +32,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff65e', end
 }
 #peacockBody {
 	position:absolute;
-	width:16vw;
+	width:40%;
 	height:32vh;
 	left:27%;
 	top: 15vh;

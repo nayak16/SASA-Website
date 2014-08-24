@@ -18,12 +18,15 @@ tl = new TimelineMax();
 tl.from(allFeathers,  .5, {scale:0, transformOrigin:'50% bottom'})
   .from(allFeathers,  1.2, {rotation:0}, 0.2)
 
+/* Main Toggle Function */
+
 $('#peacockBody').click(function(){
   if(isOpen){ //bounce when opening
     tl.tweenTo(tl.duration(), {ease:Bounce.easeOut}).timeScale(1);
   } else { //super-fast reverse to time(0);
     tl.tweenTo(0).timeScale(3);
   }
+  $(".bubble").fadeToggle();
   isOpen = !isOpen;
 })
 

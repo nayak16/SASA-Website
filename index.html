@@ -6,22 +6,21 @@
     <link rel="image_src" href="images/thumbnail.jpg">
     <link rel="image_src" href="images/cloud.jpg">
 
+    <meta property="og:image" content="images/thumbnail.jpg" />
+
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=0.25">
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom Style Sheet -->
-    
-
     <link href="css/fullcalendar.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link rel="stylesheet" href="css/peacock.css" media="screen" type="text/css" >
     <link href="css/mystyle.css" rel="stylesheet">
-     <style>
-
-	
+    <style>
+	/* Calendar CSS */
 	#loading {
 		display: none;
 		position: absolute;
@@ -48,7 +47,7 @@
 
   </head>
   <body>
-
+    <!-- Sidebar Nav -->
     <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i></i><span class="glyphicon glyphicon-arrow-left" style="font-size: 30px"></span></a>
     <div id="sidebar-wrapper">
         <ul class="sidebar-nav">
@@ -81,7 +80,7 @@
     </div>
 
    
-  <div id="myCarousel" data-interval="10" class="carousel slide">
+  <div id="myCarousel" data-interval="3000" class="carousel slide">
         <!-- Indicators -->
         <ol id="about" class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -94,7 +93,7 @@
             <div class="item active">
            		<div class="fill" style="background-image:url('images/mayurshow.jpg');"></div>
                 <div id="cap3" class="carousel-caption">
-                    <h1><a href="https://www.youtube.com/watch?v=SMDx_RoCdoM&feature=youtu.be&t=1s" target="_blank">Mayur Show 2014</a></h1>
+                    <h1><a href="http://www.youtube.com/watch?v=SMDx_RoCdoM" target="_blank">Mayur Show 2014</a></h1>
                     <p>A showcase of talents across campus filled with laughs and excitement</p>
                 </div>
             </div>
@@ -130,11 +129,11 @@
             <div class="row">
                 <div class="col-lg-4 col-md-4">
                     <h3><span class="glyphicon glyphicon-user"></span></i>  Who are we?</h3>
-                    <p>We are proud to present to you the Mayur South Asian Student Alliance, or MayurSASA for short, of Carnegie Mellon University. MayurSASA is the premier South Asian student organization on campus. It is also one of the biggest organizations on campus, with over 300 members.</p>
+                    <p>We are proud to present to you the Mayur South Asian Student Alliance (Mayur SASA) of Carnegie Mellon University. Mayur is the premier South Asian student organization on campus. It is also one of the biggest organizations on campus, with over 300 members.</p>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <h3><span class="glyphicon glyphicon-flag"></span></i>  Our Goal</h3>
-                    <p>Our main goal is to unite the South Asian community of Carnegie Mellon University and allow students to take part in events they want to get involved in</p>
+                    <p>Our main goal is to unite the South Asian community of Carnegie Mellon University by using rich and enjoyable events and activities.</p>
                 </div>
                 <div class="col-lg-4 col-md-4">
                     <h3><span class="glyphicon glyphicon-globe"></span>  What we do</h3>
@@ -175,7 +174,7 @@
        </div>
      </div>
 
-     
+	<div class="bubble"><p>Click me and check out my feathers!</p></div>
     <div class="board_members">
       <div id="p1">
         <img class="img-circle img-responsive" src="images/tissue.jpg">
@@ -274,10 +273,12 @@
                         	<div class="thumbnail">
                    		   		<img src="http://www.cs.cmu.edu/~raju/Photos/AID-CMU-Fence/slides/Fence-Panorama.jpg" alt="">
                     			<div class="caption">
-                        			<h3 class="text-center">SASA BBQ</h3>
+                        			<h3 class="text-center"><a href="https://www.facebook.com/events/319969354840608/?ref=25" target="_blank">SASA BBQ</a><a href="https://www.facebook.com/events/319969354840608/?ref=25" target="_blank"><i class="fa fa-facebook fa-fw fa-1x"></i></a></h3>
                         			<p>What:  Come to The Fence for some free food and meet all the south asian clubs on campus!</p>
                         			<p>When:  1pm-4pm, Sunday, August 25th</p>
                         			<p>Where: The Fence </p>
+                              
+
                     			</div>
                 			</div>
                         </div>
@@ -295,7 +296,7 @@
          <div class="content text-center">
 	        <button class="btn btn-primary btn-lg btn-contact" data-toggle="modal" data-target="#myModal">
  		       Contact Us
-		    </button>
+		      </button>
 
 			<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   		    	<div class="modal-dialog">
@@ -323,15 +324,15 @@
             		<a href="https://www.facebook.com/cmumayursasa" target="_blank"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
             	</li>
             	<li>
-                	<a href="" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                	<a href="https://twitter.com/CMUMayurSASA" target="_blank"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
             	</li>
             	<li>
                 	<a href="http://instagram.com/mayursasa" target="_blank"><i class="fa fa-instagram fa-fw fa-3x"></i></a>
             	</li>
         	</ul>
 			<ul class = "list-unstyled">
-		    <!-- <a href="https://twitter.com/nayakkayak" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @nayakkayak</a>
-		    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> -->
+		    <a href="https://twitter.com/CMUMayurSASA" class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @nayakkayak</a>
+		    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script> 
 			</ul>
         	<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fcmumayursasa&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=true&amp;share=false&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:80px;" allowTransparency="true"></iframe>
 		 	<hr class="small">
@@ -347,15 +348,12 @@
     <script type="text/javascript" src="js/fullcalendar.min.js"></script>
     <script type="text/javascript" src="js/gcal.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.4/TweenMax.min.js'></script>
-    <script src="js/bootstrap.js"></script>
-    <script>
-			
-    </script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/peacock.js"></script>
     <script src="js/app.js"></script>
  	
     <script>
-
+    /* Script to initialize calendar and get feed */
 	$(document).ready(function() {
 	
 		$('#calendar').fullCalendar({
@@ -366,7 +364,7 @@
 				center: 'title',
 				right: 'month, basicWeek, basicDay'
 			},
-			// US Holidays
+			// Google Calendar API
 			events: 'http://www.google.com/calendar/feeds/mayursasacmu%40gmail.com/public/basic',
 			
 			eventClick: function(event) {
@@ -387,9 +385,10 @@
 	});
 
     </script>
-
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    
+    <script src="js/wow.min.js"></script>
+    <script>
+       new WOW().init();
+    </script>
     <!-- Facebook Like button JS -->
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
