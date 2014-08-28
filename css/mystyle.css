@@ -605,6 +605,9 @@ body {
     font-family: 'Enriqueta', serif;
     font-size: 400%;
 }
+.event-pic{
+    width: 50%;
+}
 .footer-background{
     height: 52%;
     background: url(../images/cmu.jpg) no-repeat center center fixed;
